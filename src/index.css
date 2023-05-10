@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap");
+
+:root {
+  --slightly-desaturated-cyan: #5fb4a2;
+  --dark-blue: #203a4c;
+  --grayish-dark-blue: #33323d;
+  --very-light-grey: #fafafa;
+  --light-grey: #eaeaeb;
+  --bright-red: #f43030;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
