@@ -22,6 +22,8 @@ html {
 
 body {
   padding: 4rem 12rem 0 12rem;
+  font-family: "Public Sans", sans-serif;
+  background-color: var(--light-grey);
 }
 
 nav {
@@ -210,11 +212,73 @@ main {
   /* filter: invert(100%); */
 }
 
+.card {
+  width: 35rem;
+  height: 55rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-image {
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  padding-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  opacity: 0.7;
+  padding-bottom: 1rem;
+  color: var(--dark-blue);
+  padding-bottom: 1rem;
+}
+
+.card-btn {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  border-left: 2px solid var(--grayish-dark-blue);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  background-color: var(--very-light-grey);
+  color: var(--dark-blue);
+  overflow: hidden;
+}
+
+.card-btn:hover {
+  background-color: var(--grayish-dark-blue);
+  color: var(--very-light-grey);
+  border: 2px solid var(--slightly-desaturated-cyan);
+}
+
+.btn-arrow {
+  width: 1rem;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 footer {
   font-family: "Public Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   padding-right: 12rem;
+  padding-top: 2rem;
   background-color: var(--grayish-dark-blue);
   width: 100%;
   height: 8rem;
