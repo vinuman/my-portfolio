@@ -78,7 +78,7 @@ const Portfolio = () => {
         </button>
         <button
           onClick={() => setApiCard(true)}
-          style={{ borderRadius: "0 1rem 1rem 0" }}
+          style={{ borderRadius: "0 1rem 1rem 0", borderRight: "none" }}
           className={`project-type-btn ${button3State ? "active" : ""}`}
         >
           API Interactions
@@ -169,6 +169,8 @@ const Portfolio = () => {
             src={dictionary}
             title="Dictionary web app"
             description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection."
+            href2="https://github.com/vinuman/Dictionary-web-app"
+            href1="https://vinuman.github.io/Dictionary-web-app/"
           />
           <Card
             src={urlshort}
@@ -179,6 +181,8 @@ const Portfolio = () => {
             src={githubsearch}
             title="GitHub user search app"
             description="A page to searchGitHub users API to pull profile data and display it"
+            href1="https://vinuman.github.io/GitHub-user-search-app/"
+            href2="https://github.com/vinuman/GitHub-user-search-app"
           />
         </section>
       )}
