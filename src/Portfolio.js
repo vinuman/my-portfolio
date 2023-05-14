@@ -13,22 +13,50 @@ import payapi from "./images/Card images/apipay.jpg";
 import coffee from "./images/Card images/coffee.jpg";
 import dinein from "./images/Card images/dinein.jpg";
 import scoot from "./images/Card images/scoot.jpg";
+import githubsearch from "./images/Card images/githubsearch.jpg";
+import dictionary from "./images/Card images/dictionary.jpg";
+import restcountries from "./images/Card images/restcountries.jpg";
+import ipaddress from "./images/Card images/ipaddress.jpg";
+import clock from "./images/Card images/clock.jpg";
+import urlshort from "./images/Card images/urlshort.jpg";
 
 const Portfolio = () => {
   const [appCard, setAppCard] = useState(true);
   const [pageCard, setPageCard] = useState(false);
-
-  useEffect(() => {
-    if (pageCard == true) {
-      setAppCard(false);
-    }
-  }, [pageCard]);
+  const [apiCard, setApiCard] = useState(false);
+  const [button1State, setButton1State] = useState(true);
+  const [button2State, setButton2State] = useState(false);
+  const [button3State, setButton3State] = useState(false);
 
   useEffect(() => {
     if (appCard == true) {
       setPageCard(false);
+      setApiCard(false);
+      setButton1State(true);
+      setButton2State(false);
+      setButton3State(false);
     }
   }, [appCard]);
+
+  useEffect(() => {
+    if (pageCard == true) {
+      setAppCard(false);
+      setApiCard(false);
+      setButton1State(false);
+      setButton2State(true);
+      setButton3State(false);
+    }
+  }, [pageCard]);
+
+  useEffect(() => {
+    if (apiCard == true) {
+      setAppCard(false);
+      setPageCard(false);
+      setButton1State(false);
+      setButton2State(false);
+      setButton3State(true);
+    }
+  }, [apiCard]);
 
   return (
     <div>
@@ -36,18 +64,22 @@ const Portfolio = () => {
         <button
           onClick={() => setAppCard(true)}
           style={{ borderRadius: "1rem 0 0 1rem" }}
-          className="project-type-btn"
+          className={`project-type-btn ${button1State ? "active" : ""}`}
         >
           In Browser Applications
           <img className="project-arrow" src={arrowright}></img>
         </button>
-        <button onClick={() => setPageCard(true)} className="project-type-btn">
+        <button
+          onClick={() => setPageCard(true)}
+          className={`project-type-btn ${button2State ? "active" : ""}`}
+        >
           Multi Page Websites
           <img className="project-arrow" src={arrowright}></img>
         </button>
         <button
+          onClick={() => setApiCard(true)}
           style={{ borderRadius: "0 1rem 1rem 0" }}
-          className="project-type-btn"
+          className={`project-type-btn ${button3State ? "active" : ""}`}
         >
           API Interactions
           <img className="project-arrow" src={arrowright}></img>
@@ -113,6 +145,40 @@ const Portfolio = () => {
             src={dinein}
             title="Dine restaurant website"
             description="A 2-page website with tricky design details and form validation."
+          />
+        </section>
+      )}
+      {apiCard && (
+        <section className="api-cards cards-container">
+          <Card
+            src={restcountries}
+            title="REST Countries API"
+            description="Data pulle from the REST Countries API with color theme switcher"
+          />
+          <Card
+            src={ipaddress}
+            title="IP Address Tracker"
+            description="Two separate APIs used together to create an IP Address Tracking app."
+          />
+          <Card
+            src={clock}
+            title="Clock app"
+            description="Working with external APIs to set data based on a visitor's location. logic to set content depending on the time of day."
+          />
+          <Card
+            src={dictionary}
+            title="Dictionary web app"
+            description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection."
+          />
+          <Card
+            src={urlshort}
+            title="URL shortening API landing page"
+            description="Integrate with the shrtcode URL shortening API and work with browser storage in this landing page."
+          />
+          <Card
+            src={githubsearch}
+            title="GitHub user search app"
+            description="A page to searchGitHub users API to pull profile data and display it"
           />
         </section>
       )}
