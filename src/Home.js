@@ -1,7 +1,13 @@
 import jigsaw from "./images/ashkan-forouzani-m0l9NBCivuk-unsplash.jpg";
 import downarrow from "./images/icons/down-arrows.svg";
 
-const Home = () => {
+const Home = ({ setPortfolio, setContact }) => {
+  const handleAboutClick = (e) => {
+    e.preventDefault();
+    const target = document.getElementById("about-me");
+    target.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <header className="home-header">
@@ -11,13 +17,15 @@ const Home = () => {
             Hi there! I'm Vinu Cyril, a budding front-end developer passionate
             about creating responsive and engaging user experience.
           </p>
-          <button className="about-button">
-            <img src={downarrow}></img>
-            About me
-          </button>
+          <a href="#about-me" onClick={handleAboutClick}>
+            <button className="about-button">
+              <img src={downarrow}></img>
+              About me
+            </button>
+          </a>
         </div>
       </header>
-      <main>
+      <main id="about-me">
         <div className="image-container">IMAGE</div>
         <div className="about">
           <p className="about-title">About Me</p>
@@ -31,14 +39,18 @@ const Home = () => {
             find me outdoors. I love being out in nature whether that’s going
             for a walk, run or cycling. I’d love you to check out my work.
           </p>
-          <button className="about-btn">Go to Portfolio</button>
+          <button onClick={() => setPortfolio(true)} className="about-btn">
+            Go to Portfolio
+          </button>
         </div>
       </main>
       <section className="home-contact">
         <p className="home-contact-title">
           Interested in doing a project together?
         </p>
-        <button className="about-btn">Contact Me</button>
+        <button onClick={() => setContact(true)} className="about-btn">
+          Contact Me
+        </button>
       </section>
     </div>
   );

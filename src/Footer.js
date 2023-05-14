@@ -3,15 +3,15 @@ import github from "./images/icons/github.svg";
 import frontendmentor from "./images/icon-frontend-mentor.svg";
 import linkedin from "./images/icons/linkedin.svg";
 
-const Footer = () => {
+const Footer = ({ setHome, setPortfolio, setContact }) => {
   return (
     <footer>
       <div className="nav-links">
         <img src={logo}></img>
         <ul>
-          <li>Home</li>
-          <li>Portfolio</li>
-          <li>Contact Me</li>
+          <li onClick={() => setHome(true)}>Home</li>
+          <li onClick={() => setPortfolio(true)}>Portfolio</li>
+          <li onClick={() => setContact(true)}>Contact Me</li>
         </ul>
       </div>
       <div className="contact-links">

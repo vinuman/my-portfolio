@@ -72,11 +72,15 @@ function App() {
           </ul>
         </div>
       </nav>
-      {home && <Home />}
+      {home && <Home setPortfolio={setPortfolio} setContact={setContact} />}
       {portfolio && <Portfolio />}
       {contact && <Contact />}
 
-      <Footer />
+      <Footer
+        setHome={setHome}
+        setPortfolio={setPortfolio}
+        setContact={setContact}
+      />
     </div>
   );
 }

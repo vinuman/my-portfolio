@@ -24,6 +24,7 @@ body {
   padding: 4rem 12rem 0 12rem;
   font-family: "Public Sans", sans-serif;
   background-color: var(--light-grey);
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -121,7 +122,7 @@ nav {
 main {
   display: flex;
   padding-bottom: 2rem;
-  padding: 0 0 2rem 8rem;
+  padding: 0 0 4rem 8rem;
 }
 
 .image-container {
@@ -160,7 +161,10 @@ main {
   height: 4.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  background-color: #fff;
+  background-color: var(--dark-blue);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 1rem;
   border: 1px solid var(--grayish-dark-blue);
   letter-spacing: 0.2rem;
   margin-top: 1rem;
@@ -241,7 +245,7 @@ main {
 .card-title {
   font-size: 2rem;
   color: var(--dark-blue);
-  padding-bottom: 1rem;
+  padding-bottom: 0.6rem;
 }
 
 .card-text {
@@ -249,7 +253,7 @@ main {
   opacity: 0.7;
   padding-bottom: 1rem;
   color: var(--dark-blue);
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .card-btn {
@@ -262,13 +266,12 @@ main {
   font-weight: 700;
   cursor: pointer;
   position: relative;
-  background-color: var(--very-light-grey);
-  color: var(--dark-blue);
+  background-color: var(--dark-blue);
   overflow: hidden;
 }
 
 .card-btn:hover {
-  background-color: var(--light-grey);
+  background-color: var(--slightly-desaturated-cyan);
   border: 2px solid var(--slightly-desaturated-cyan);
   transition: all 0.2s ease;
 }
@@ -278,6 +281,8 @@ main {
   position: absolute;
   right: 10%;
   top: 30%;
+  filter: invert(100);
+  font-weight: 700;
 }
 
 .cards-container {
@@ -287,7 +292,7 @@ main {
 
 a > .card-btn {
   text-decoration: none;
-  color: var(--grayish-dark-blue);
+  color: #fff;
 }
 
 button.active {
@@ -368,11 +373,13 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-right: 12rem;
-  padding-top: 2rem;
-  background-color: var(--grayish-dark-blue);
+  padding-top: 1rem;
+  background-color: var(--dark-blue);
   width: 100%;
   height: 8rem;
-  border-radius: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 footer > .nav-links {
