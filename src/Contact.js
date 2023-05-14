@@ -10,7 +10,11 @@ const Contact = () => {
         <div className="contact-details">
           <div className="contact-item">
             <p className="contact-title">Email:</p>
-            <p className="contact-info email">vinucyril@gmail.com</p>
+            <p className="contact-info">
+              <a className="email" href="mailto:vinucyril@gmail.com">
+                vinucyril@gmail.com
+              </a>
+            </p>
           </div>
           <div className="contact-item">
             <p className="contact-title">Phone:</p>

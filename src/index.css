@@ -45,6 +45,11 @@ nav {
   color: var(--grayish-dark-blue);
   cursor: pointer;
   letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.li-active {
+  border-bottom: 3px solid var(--slightly-desaturated-cyan);
 }
 
 .nav-links > ul > li:hover {
