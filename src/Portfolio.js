@@ -126,11 +126,7 @@ const Portfolio = () => {
             title="Arch Studio multi-page website"
             description="A 4-page site with mapping APIs. The pages are fully responsive"
           />
-          <Card
-            src={payapi}
-            title="PayAPI multi-page website"
-            description="A marketing site, complete with custom form validation throughout."
-          />
+
           <Card
             src={scoot}
             title="Scoot multi-page website"

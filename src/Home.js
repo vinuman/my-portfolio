@@ -24,6 +24,7 @@ const Home = ({ setPortfolio, setContact }) => {
             </button>
           </a>
         </div>
+        <div className="project-labels"></div>
       </header>
       <main id="about-me">
         <div className="image-container">IMAGE</div>
