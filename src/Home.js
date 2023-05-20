@@ -1,6 +1,7 @@
 import jigsaw from "./images/ashkan-forouzani-m0l9NBCivuk-unsplash.jpg";
 import downarrow from "./images/icons/down-arrows.svg";
-
+import javascript from "./images/joan-gamell-ZS67i1HLllo-unsplash.jpg";
+import screenshot from "./images/Screenshot 2023-05-20 at 1.44.40 AM.png";
 const Home = ({ setPortfolio, setContact }) => {
   const handleAboutClick = (e) => {
     e.preventDefault();
@@ -11,7 +12,8 @@ const Home = ({ setPortfolio, setContact }) => {
   return (
     <div>
       <header className="home-header">
-        <img src={jigsaw}></img>
+        <img src={screenshot}></img>
+
         <div className="title">
           <p>
             Hi there! I'm Vinu Cyril, a budding front-end developer passionate

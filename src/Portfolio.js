@@ -9,9 +9,8 @@ import feedback from "./images/Card images/Feedback.jpg";
 import invoices from "./images/Card images/Invoices.jpg";
 import myteam from "./images/Card images/myteam.jpg";
 import archstudio from "./images/Card images/archstudio.jpg";
-import payapi from "./images/Card images/apipay.jpg";
+import designo from "./images/Card images/preview.jpg";
 import coffee from "./images/Card images/coffee.jpg";
-import dinein from "./images/Card images/dinein.jpg";
 import scoot from "./images/Card images/scoot.jpg";
 import githubsearch from "./images/Card images/githubsearch.jpg";
 import dictionary from "./images/Card images/dictionary.jpg";
@@ -117,6 +116,11 @@ const Portfolio = () => {
       {pageCard && (
         <section className="multipage-cards cards-container">
           <Card
+            src={designo}
+            title="Designo multi-page website"
+            description="This one's a BIG project! This challenge includes 5 different templates that make up a 7-page site. A perfect portfolio piece to show how you build multi-page websites!"
+          />
+          <Card
             src={myteam}
             title="myteam multi-page website"
             description="A professional front-end developer's workflow. It includes designs for a 3-page fully-functional website."
@@ -136,11 +140,6 @@ const Portfolio = () => {
             src={coffee}
             title="Coffeeroasters subscription site"
             description="A 3-page subscription site with interactive subscription page"
-          />
-          <Card
-            src={dinein}
-            title="Dine restaurant website"
-            description="A 2-page website with tricky design details and form validation."
           />
         </section>
       )}

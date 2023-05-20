@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-links > ul > li {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: var(--grayish-dark-blue);
   cursor: pointer;
@@ -50,11 +50,12 @@ nav {
 }
 
 .li-active {
-  border-bottom: 3px solid var(--slightly-desaturated-cyan);
+  border-bottom: 4px solid var(--slightly-desaturated-cyan);
 }
 
 .nav-links > ul > li:hover {
-  opacity: 0.7;
+  color: black;
+  scale: 1.04;
 }
 
 .home-header {
@@ -78,11 +79,23 @@ nav {
   mix-blend-mode: luminosity;
   position: absolute;
   bottom: 3%;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
   border-radius: 1rem;
+}
+
+@keyframes titleLoadAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .title > p {
@@ -92,11 +105,24 @@ nav {
   color: #fff;
   padding-left: 2rem;
   padding-top: 1rem;
+  animation: titleLoadAnimation 3s ease-in;
+  mix-blend-mode: exclusion;
+}
+
+@keyframes aboutButtonAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about-button {
-  width: 45rem;
-  height: 7rem;
+  width: 50rem;
+  height: 8rem;
   background-color: var(--grayish-dark-blue);
   color: #fff;
   font-size: 1.8rem;
@@ -109,6 +135,8 @@ nav {
   border-radius: 1rem;
   margin-left: 2rem;
   margin-top: -4rem;
+  animation: aboutButtonAnimation 3s ease-in;
+  mix-blend-mode: exclusion;
 }
 
 .about-button:hover {
@@ -116,11 +144,11 @@ nav {
 }
 
 .about-button > img {
-  width: 3rem;
-  height: 2rem;
+  width: 4rem;
+  height: 3rem;
   position: absolute;
   left: 20%;
-  top: 40%;
+  top: 30%;
 }
 
 main {
@@ -145,7 +173,7 @@ main {
 }
 
 .about-title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Ibarra Real Nova", serif;
   font-weight: 700;
   padding-bottom: 2rem;
@@ -161,9 +189,9 @@ main {
 }
 
 .about-btn {
-  width: 20rem;
-  height: 4.8rem;
-  font-size: 1.2rem;
+  width: 30rem;
+  height: 6.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   background-color: var(--dark-blue);
   color: #fff;
@@ -190,7 +218,7 @@ main {
 }
 
 .home-contact-title {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Ibarra Real Nova", serif;
   font-weight: 700;
   padding-right: 2rem;
