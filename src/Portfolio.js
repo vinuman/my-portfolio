@@ -18,6 +18,8 @@ import restcountries from "./images/Card images/restcountries.jpg";
 import ipaddress from "./images/Card images/ipaddress.jpg";
 import clock from "./images/Card images/clock.jpg";
 import urlshort from "./images/Card images/urlshort.jpg";
+import snapshot from "./images/Card images/snapshot.jpg";
+import entertainment from "./images/Card images/Entertainment.jpg";
 
 const Portfolio = () => {
   const [appCard, setAppCard] = useState(true);
@@ -102,14 +104,14 @@ const Portfolio = () => {
             description="A real worl feedback App, working with JSON and managing states."
           />
           <Card
+            src={entertainment}
+            title="Entertainment web app"
+            description="This multi-page entertainment web app will have you working with JSON data, routing, state management, and search functionality."
+          />
+          <Card
             src={devjobs}
             title="Devjobs web app"
             description="A real-world app, working with JSON, managing state"
-          />
-          <Card
-            src={markdown}
-            title="In-browser markdown editor"
-            description="A fully-functional in-browser markdown editor application with a light/dark mode toggle. "
           />
         </section>
       )}
@@ -119,6 +121,11 @@ const Portfolio = () => {
             src={designo}
             title="Designo multi-page website"
             description="This one's a BIG project! This challenge includes 5 different templates that make up a 7-page site. A perfect portfolio piece to show how you build multi-page websites!"
+          />
+          <Card
+            src={snapshot}
+            title="Photosnap multi-page website"
+            description="In this challenge, you'll be building the marketing site for a photo-sharing app. This will be a perfect opportunity to put your CSS Grid skills to the test!"
           />
           <Card
             src={myteam}
@@ -131,11 +138,6 @@ const Portfolio = () => {
             description="A 4-page site with mapping APIs. The pages are fully responsive"
           />
 
-          <Card
-            src={scoot}
-            title="Scoot multi-page website"
-            description="A 4-page website with mobile and desktop views."
-          />
           <Card
             src={coffee}
             title="Coffeeroasters subscription site"

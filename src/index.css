@@ -85,6 +85,7 @@ nav {
   justify-content: space-between;
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @keyframes titleLoadAnimation {
@@ -186,6 +187,7 @@ main {
   width: 80%;
   line-height: 2.8rem;
   opacity: 0.7;
+  padding-bottom: 1rem;
 }
 
 .about-btn {
@@ -341,6 +343,11 @@ button.active > img {
 
 /* CONTACT ME */
 
+.line {
+  width: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .contact-description,
 .contact-actual {
   display: flex;
@@ -365,8 +372,10 @@ button.active > img {
 }
 
 .contact-details {
+  border-radius: 1rem;
   width: 40%;
-  padding: 2rem;
+  padding: 4rem;
+  background-color: var(--light-grey);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -403,6 +412,14 @@ a > img {
 a > img:hover {
   transform: scale(1.2);
 }
+
+.contact-zoom {
+  position: absolute;
+  top: 10%;
+  width: 60%;
+  padding: 12rem;
+}
+
 /* FOOTER CSS */
 
 footer {

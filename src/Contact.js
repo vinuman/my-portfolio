@@ -1,13 +1,26 @@
 import github from "./images/icons/github.svg";
 import linkedin from "./images/icons/linkedin.svg";
 import frontendmentor from "./images/icon-frontend-mentor.svg";
+import { useState } from "react";
 
 const Contact = () => {
+  const [contact, setContact] = useState(false);
+  const handleContactMouseEnter = () => {
+    setContact(true);
+  };
+  const handleContactMouseLeave = () => {
+    setContact(false);
+  };
   return (
-    <div className="contact">
+    <div onClick={handleContactMouseLeave} className="contact">
       <section className="contact-actual">
         <h2>Contact Me</h2>
-        <div className="contact-details">
+        <div className="line"></div>
+        <div
+          onClick={handleContactMouseLeave}
+          onMouseOver={handleContactMouseEnter}
+          className={`contact-details ${contact ? "contact-zoom" : ""}`}
+        >
           <div className="contact-item">
             <p className="contact-title">Email:</p>
             <p className="contact-info">
