@@ -141,7 +141,9 @@ const Portfolio = () => {
           <Card
             src={coffee}
             title="Coffeeroasters subscription site"
-            description="A 3-page subscription site with interactive subscription page"
+            description="A 3-page subscription site with interactive subscription component. The website was built using React Router Dom for handling the routing within the application"
+            href1="https://vinuman.github.io/Coffeeroasters-subscription-site/#/"
+            href2="https://github.com/vinuman/Coffeeroasters-subscription-site"
           />
         </section>
       )}
@@ -165,7 +167,7 @@ const Portfolio = () => {
           <Card
             src={dictionary}
             title="Dictionary web app"
-            description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection."
+            description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection.The Website is fully responsive, implemented with vanilla CSS."
             href2="https://github.com/vinuman/Dictionary-web-app"
             href1="https://vinuman.github.io/Dictionary-web-app/"
           />
