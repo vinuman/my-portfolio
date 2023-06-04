@@ -142,7 +142,7 @@ const Portfolio = () => {
           <Card
             src={coffee}
             title="Coffeeroasters subscription site"
-            description="A 3-page subscription site with interactive subscription component. The website was built using React Router Dom for handling the routing within the application. The Website is fully responsive, implemented with vanilla CSS."
+            description="A 3-page subscription site with interactive subscription component build with the useState hook. The website was built using React Router Dom for handling the routing within the application. The Website is fully responsive, implemented with vanilla CSS."
             href1="https://vinuman.github.io/Coffeeroasters-subscription-site/#/"
             href2="https://github.com/vinuman/Coffeeroasters-subscription-site"
           />

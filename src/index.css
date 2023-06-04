@@ -258,12 +258,12 @@ main {
 
 .card {
   width: 37rem;
-  height: 55rem;
+  text-align: center;
   padding: 2rem;
   margin-bottom: 2rem;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
 }
 
 .card-image {
@@ -288,15 +288,14 @@ main {
   padding-bottom: 1rem;
   color: var(--dark-blue);
   padding-bottom: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .card-btn {
-  width: 20rem;
-  height: 4rem;
+  width: 80%;
+  height: 5.6rem;
   border: none;
-  border-radius: 1rem;
-  border-left: 2px solid var(--dark-blue);
-
+  border-radius: 0.6rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
