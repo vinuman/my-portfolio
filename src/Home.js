@@ -12,7 +12,7 @@ const Home = ({ setPortfolio, setContact }) => {
   return (
     <div>
       <header className="home-header">
-        <img src={screenshot}></img>
+        <img src={jigsaw}></img>
 
         <div className="title">
           <p>

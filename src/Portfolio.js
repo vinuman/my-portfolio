@@ -9,15 +9,15 @@ import feedback from "./images/Card images/Feedback.jpg";
 import invoices from "./images/Card images/Invoices.jpg";
 import myteam from "./images/Card images/myteam.jpg";
 import archstudio from "./images/Card images/archstudio.jpg";
-import designo from "./images/Card images/preview.jpg";
+
 import coffee from "./images/Card images/coffee.jpg";
-import scoot from "./images/Card images/scoot.jpg";
+
 import githubsearch from "./images/Card images/githubsearch.jpg";
 import dictionary from "./images/Card images/dictionary.jpg";
 import restcountries from "./images/Card images/restcountries.jpg";
 import ipaddress from "./images/Card images/ipaddress.jpg";
 import clock from "./images/Card images/clock.jpg";
-import urlshort from "./images/Card images/urlshort.jpg";
+
 import snapshot from "./images/Card images/snapshot.jpg";
 import entertainment from "./images/Card images/Entertainment.jpg";
 
@@ -88,7 +88,7 @@ const Portfolio = () => {
       </header>
       {appCard && (
         <section className="application-cards cards-container">
-          <Card
+          {/*  <Card
             src={kanban}
             title="Kanban task management app"
             description="A fully-functional task management app with a light/dark mode toggle. Additional work with JSON."
@@ -112,16 +112,17 @@ const Portfolio = () => {
             src={devjobs}
             title="Devjobs web app"
             description="A real-world app, working with JSON, managing state"
+          /> */}
+          <Card
+            src={devjobs}
+            title="Devjobs web app"
+            description="A real-world app, working with JSON, managing state"
           />
         </section>
       )}
       {pageCard && (
         <section className="multipage-cards cards-container">
-          <Card
-            src={designo}
-            title="Designo multi-page website"
-            description="This one's a BIG project! This challenge includes 5 different templates that make up a 7-page site. A perfect portfolio piece to show how you build multi-page websites!"
-          />
+          {/*  
           <Card
             src={snapshot}
             title="Photosnap multi-page website"
@@ -136,12 +137,12 @@ const Portfolio = () => {
             src={archstudio}
             title="Arch Studio multi-page website"
             description="A 4-page site with mapping APIs. The pages are fully responsive"
-          />
+          /> */}
 
           <Card
             src={coffee}
             title="Coffeeroasters subscription site"
-            description="A 3-page subscription site with interactive subscription component. The website was built using React Router Dom for handling the routing within the application"
+            description="A 3-page subscription site with interactive subscription component. The website was built using React Router Dom for handling the routing within the application. The Website is fully responsive, implemented with vanilla CSS."
             href1="https://vinuman.github.io/Coffeeroasters-subscription-site/#/"
             href2="https://github.com/vinuman/Coffeeroasters-subscription-site"
           />
@@ -149,7 +150,7 @@ const Portfolio = () => {
       )}
       {apiCard && (
         <section className="api-cards cards-container">
-          <Card
+          {/* <Card
             src={restcountries}
             title="REST Countries API"
             description="Data pulle from the REST Countries API with color theme switcher"
@@ -163,18 +164,13 @@ const Portfolio = () => {
             src={clock}
             title="Clock app"
             description="Working with external APIs to set data based on a visitor's location. logic to set content depending on the time of day."
-          />
+          /> */}
           <Card
             src={dictionary}
             title="Dictionary web app"
-            description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection.The Website is fully responsive, implemented with vanilla CSS."
+            description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection."
             href2="https://github.com/vinuman/Dictionary-web-app"
             href1="https://vinuman.github.io/Dictionary-web-app/"
-          />
-          <Card
-            src={urlshort}
-            title="URL shortening API landing page"
-            description="Integrate with the shrtcode URL shortening API and work with browser storage in this landing page."
           />
           <Card
             src={githubsearch}
