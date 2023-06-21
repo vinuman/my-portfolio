@@ -61,126 +61,15 @@ const Portfolio = () => {
 
   return (
     <div>
-      <header className="projects-header">
-        <button
-          onClick={() => setAppCard(true)}
-          style={{ borderRadius: "1rem 0 0 1rem" }}
-          className={`project-type-btn ${button1State ? "active" : ""}`}
-        >
-          In Browser Applications
-          <img className="project-arrow" src={arrowright}></img>
-        </button>
-        <button
-          onClick={() => setPageCard(true)}
-          className={`project-type-btn ${button2State ? "active" : ""}`}
-        >
-          Multi Page Websites
-          <img className="project-arrow" src={arrowright}></img>
-        </button>
-        <button
-          onClick={() => setApiCard(true)}
-          style={{ borderRadius: "0 1rem 1rem 0", borderRight: "none" }}
-          className={`project-type-btn ${button3State ? "active" : ""}`}
-        >
-          API Interactions
-          <img className="project-arrow" src={arrowright}></img>
-        </button>
-      </header>
-      {appCard && (
-        <section className="application-cards cards-container">
-          {/*  <Card
-            src={kanban}
-            title="Kanban task management app"
-            description="A fully-functional task management app with a light/dark mode toggle. Additional work with JSON."
-          />
-          <Card
-            src={invoices}
-            title="Invoices App"
-            description="A real worl feedback App, working with JSON and managing states."
-          />
-          <Card
-            src={feedback}
-            title="Product feedback app"
-            description="A real worl feedback App, working with JSON and managing states."
-          />
-          <Card
-            src={entertainment}
-            title="Entertainment web app"
-            description="This multi-page entertainment web app will have you working with JSON data, routing, state management, and search functionality."
-          />
-          <Card
-            src={devjobs}
-            title="Devjobs web app"
-            description="A real-world app, working with JSON, managing state"
-          /> */}
-          <Card
-            src={devjobs}
-            title="Devjobs web app"
-            description="A real-world app, working with JSON, managing state"
-          />
-        </section>
-      )}
-      {pageCard && (
-        <section className="multipage-cards cards-container">
-          {/*  
-          <Card
-            src={snapshot}
-            title="Photosnap multi-page website"
-            description="In this challenge, you'll be building the marketing site for a photo-sharing app. This will be a perfect opportunity to put your CSS Grid skills to the test!"
-          />
-          <Card
-            src={myteam}
-            title="myteam multi-page website"
-            description="A professional front-end developer's workflow. It includes designs for a 3-page fully-functional website."
-          />
-          <Card
-            src={archstudio}
-            title="Arch Studio multi-page website"
-            description="A 4-page site with mapping APIs. The pages are fully responsive"
-          /> */}
-
-          <Card
-            src={coffee}
-            title="Coffeeroasters subscription site"
-            description="A 3-page subscription site with interactive subscription component build with the useState hook. The website was built using React Router Dom for handling the routing within the application. The Website is fully responsive, implemented with vanilla CSS."
-            href1="https://vinuman.github.io/Coffeeroasters-subscription-site/#/"
-            href2="https://github.com/vinuman/Coffeeroasters-subscription-site"
-          />
-        </section>
-      )}
-      {apiCard && (
-        <section className="api-cards cards-container">
-          {/* <Card
-            src={restcountries}
-            title="REST Countries API"
-            description="Data pulle from the REST Countries API with color theme switcher"
-          />
-          <Card
-            src={ipaddress}
-            title="IP Address Tracker"
-            description="Two separate APIs used together to create an IP Address Tracking app."
-          />
-          <Card
-            src={clock}
-            title="Clock app"
-            description="Working with external APIs to set data based on a visitor's location. logic to set content depending on the time of day."
-          /> */}
-          <Card
-            src={dictionary}
-            title="Dictionary web app"
-            description="Integrate with the Dictionary API to create a real-world dictionary web app. Additional functionss include colour themes and font selection."
-            href2="https://github.com/vinuman/Dictionary-web-app"
-            href1="https://vinuman.github.io/Dictionary-web-app/"
-          />
-          <Card
-            src={githubsearch}
-            title="GitHub user search app"
-            description="A page to searchGitHub users API to pull profile data and display it"
-            href1="https://vinuman.github.io/GitHub-user-search-app/"
-            href2="https://github.com/vinuman/GitHub-user-search-app"
-          />
-        </section>
-      )}
+      <section className="cards-container">
+        <Card
+          src={coffee}
+          title="Coffeeroasters subscription site"
+          description="A 3-page subscription site with interactive subscription component build with the useState hook. The website was built using React Router Dom for handling the routing within the application. The Website is fully responsive, implemented with vanilla CSS."
+          href1="https://vinuman.github.io/Coffeeroasters-subscription-site/#/"
+          href2="https://github.com/vinuman/Coffeeroasters-subscription-site"
+        />
+      </section>
     </div>
   );
 };

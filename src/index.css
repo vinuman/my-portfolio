@@ -241,10 +241,11 @@ main {
   color: #fff;
   /* color: #5fb4a2; */
   border: none;
-  border-right: 2px solid black;
+
   cursor: pointer;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: sticky;
 }
 
 .project-arrow {
